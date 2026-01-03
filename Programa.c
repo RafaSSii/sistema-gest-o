@@ -4,6 +4,12 @@
 #include <unistd.h>
 #include <time.h>
 
+char op;
+
+void getch(){
+    system("read b");
+}
+
 int main (){
 
     return 0;
