@@ -27,6 +27,26 @@ typedef struct{
     End endereco;
 }Cli;
 
+typedef struct{
+    int codigo;
+    char nome[30];
+    char fornecedor[30];
+    char categoria[30];
+    int quant;
+    float valorUnit;
+}Prod;
+
+typedef struct{
+    int codigo;
+    int dia;
+    int mes;
+    int ano;
+    Cli clienteQuePediu;
+    Prod *produtoPedido;
+    int *qtdProdutoPedido;
+    int qtd;
+}Ped;
+
 
 
 int main (){
