@@ -10,6 +10,25 @@ void getch(){
     system("read b");
 }
 
+typedef struct{
+    char logradouro[10];
+    char complemento[20];
+    char cep[10];
+    char bairro[20];
+    char cidade[20];
+    char estado[3];
+}End;
+
+typedef struct{
+    int codigo;
+    char nome[30];
+    char cnpj[20], cpf[20];
+    char telefone[10];
+    End endereco;
+}Cli;
+
+
+
 int main (){
 
     return 0;
