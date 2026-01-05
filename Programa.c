@@ -68,9 +68,21 @@ void gerenciaDeProdutos(Prod*, int*, FILE*);
     void atualizarEstoqueProduto(Prod*, int);
     void imprimirProduto(Prod);
 
-
+void gerenciaDePedidos(Ped*, Cli*, int*, int, int);
+    void cadastrarPedido(Ped*, Cli*, int*, int, int);
+        void obterData(Ped*);
+    void listarPedidosDeUmCliente(Ped*, int);
+        void ordenarPedidosPorData(Ped*, int);
+    void listarPedidosDeUmDia(Ped*, int);
+        void ordenarPorNomeCliente(Ped*, int);
+    void imprimirPedido(Ped);
 
 int main (){
+    FILE *arquivo;
+    Prod *produto;
+    Cli *cliente;
+    Ped *pedido;
+    int contCliente=0, contProduto=0, contPedido=0;
 
     return 0;
 }
