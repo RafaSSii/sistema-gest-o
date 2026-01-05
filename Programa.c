@@ -47,6 +47,17 @@ typedef struct{
     int qtd;
 }Ped;
 
+void menu();
+
+void gerenciaDeClientes(Cli*, int*, FILE*);
+    Cli cadastrarCliente(Cli, int);
+    void listarCliente(Cli*, int);
+        void ordenarClientePorOrdemAlfabetica(Cli*, int);
+    void buscarCliente(Cli*, int);
+    void atualizarCliente(Cli*, int);
+    void excluirCliente(Cli*, int);
+    void imprimirCliente(Cli);
+
 
 
 int main (){
