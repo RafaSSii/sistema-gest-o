@@ -58,6 +58,16 @@ void gerenciaDeClientes(Cli*, int*, FILE*);
     void excluirCliente(Cli*, int);
     void imprimirCliente(Cli);
 
+void gerenciaDeProdutos(Prod*, int*, FILE*);
+    Prod cadastrarProduto(Prod, int);
+    void listarProdutosCadastrados(Prod*, int);
+        void ordenarProdutoPorNome(Prod*, int);
+        void filtrarCategoria();
+    void buscarProdutosCadastrados(Prod*, int);
+    void atualizarProdutoCadastrado(Prod*, int);
+    void atualizarEstoqueProduto(Prod*, int);
+    void imprimirProduto(Prod);
+
 
 
 int main (){
